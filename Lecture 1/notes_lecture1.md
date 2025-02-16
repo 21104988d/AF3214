@@ -7,7 +7,7 @@
 4. String: "Apple"
 
 ## Functions
-1. Operators: + - * /
+1. Operators: + - * / ** _power_ // _only integar_ % _reminder_
 2. Coveret betweeen data types
 3. String functions
 
@@ -18,10 +18,36 @@
 "Hello World"[7] = "o" <br>
 "Hello World"[1:5] = "ello" _#Stop at [4]"_
 
+## np.exp() / np.log function
+```
+import numpy as np _#import the package numpy_
+np.exp(1)
+np.float(2.718)
+np.log(2.718) #inverse of expotential
+np.float(0.999)
+```
+Use to find the expotential function and inverse expotential function
+
+## Comparison operators
+1. > : bigger than
+2. < : smaller than
+3. >= : bigger than and equal
+4. <= : smaller than and equal
+5. == : equal or not
+6. != : not equal or not
+
+## Logical operators
+1. and : both side must be true
+2. or : only one side must be true
+3. not : reverser for the operators
+
 ## Print function
 #### print("Hello")
 #### Hello
 Used to print Hello on the output
+
+## \n / \t functions
+#### print("Hello)
 
 ## len() function
 #### len("Hello")
@@ -35,6 +61,7 @@ Use to count how many item
 Use to replace a specific term or characters
 
 ## .upper() / .lower() function
-#### 
-
-
+#### hello = "Hello World"
+#### hello.upper()
+#### HELLO WORLD"
+Use to capitalize or lower all the character
