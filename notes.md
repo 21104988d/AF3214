@@ -140,5 +140,49 @@ Return can return back any function or variable
 # Recitation 1
 
 ## Data types
-1. Common confusion: digit and number
+Common confusion: digit and number
+- Digit: 0, 1, 2, 3, ...
+- Number: written with one or more digit
+- e.g.: 3 + 2 = 5, "3" + "2" = "32"
 
+## Variables
+- Variable is a pointer point to that memory
+
+## Assigning values to variables
+- Not require specifiy data type
+- Data type is inferred by the value and can be overwritten
+
+## Program flow
+1. Unique: pass one by one
+2. Divergent: make a judgement and decide the way
+3. Loops: repetitions with known or unknown numbers
+
+## range() function
+```
+range(start, stop, step)
+```
+- range(1, 3): cycle 2 times
+- range(3): cycle 3 times
+
+## for function
+```
+count = 0
+for _ in range(3):
+  count = count + 1
+```
+For loop used to repitation for known number of times
+
+## while function
+```
+count = 0
+while count > 4:
+  count = count + 1
+```
+While loop used to repitation for unknown number of times until specific requirement meet
+
+## read / write function
+```
+file = open("amount.txt", "r") #used to read the file
+file = open("amount.txt", "w") #used to write the file from start
+file = open("amount.txt", "a") # used to add data after the end of the file
+```
