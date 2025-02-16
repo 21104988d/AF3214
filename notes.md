@@ -186,7 +186,7 @@ file = open("amount.txt", "r") #used to read the file
 file = open("amount.txt", "w") #used to write the file from start
 file = open("amount.txt", "a") # used to add data after the end of the file
 ```
-# Lecture 3 Lists, Loops, and Ifs
+# Lecture 3 Lists, Loops, Ifs, Dictionaries and Files
 
 ## Lists
 ```
@@ -317,3 +317,41 @@ for score in test_scores:
 True
 ```
 - Use to test specfic statement contain or not
+
+## Dictionary
+```
+dict = {
+  "a" #key: [1, 3] #value, 
+  "b": [2, 4]
+}
+```
+- Collection of {key: value} pairs
+- Indexed by keys
+- Compound data types
+
+## Dicitionary Methods
+
+
+## Looping through a dictionary
+```
+dict = {
+  "a": [1, 3], 
+  "b": [2, 4]
+}
+for key in dict.keys():
+  print(key)
+a
+b
+for value in dict.values():
+  print(value)
+[1, 3]
+[2, 4]
+for key, value in dict.items():
+  print(key)
+  print(value)
+a
+[1, 3]
+b
+[2, 4]
+```
+- Can explicit to loop through keys and values
