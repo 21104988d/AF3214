@@ -206,7 +206,7 @@ arr.array(type, [item])
 - Elements are contiguous memeory location allowing easy modification
 
 ## Different between List and Array
-![alt text](Lecture 3/list vs array.png)
+![alt text](https://github.com/21104988d/AF3214/blob/main/Lecture%203/list%20vs%20array.png)
 
 ## Loops
 - Loops can execute a block of code repeatedly
