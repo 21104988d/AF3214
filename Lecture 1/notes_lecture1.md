@@ -12,10 +12,10 @@
 3. String functions
 
 ## Indexing
-" H e l l o   W o r l d " \n
-  0 1 2 3 4 5 6 7 8 9 10 \n
-"Hello World"[0] = "H" \n
-"Hello World"[7] = "o" \n
+" H e l l o   W o r l d " <br>
+  0 1 2 3 4 5 6 7 8 9 10 <br>
+"Hello World"[0] = "H" <br>
+"Hello World"[7] = "o" <br>
 "Hello World"[1:5] = "ello" _#Stop at [4]"_
 
 ## Print function
