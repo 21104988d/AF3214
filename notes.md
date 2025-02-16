@@ -208,5 +208,112 @@ arr.array(type, [item])
 ## Different between List and Array
 ![alt text](https://github.com/21104988d/AF3214/blob/main/Lecture%203/list%20vs%20array.png)
 
+## .sort()
+```
+list = [3, 2, 1, 4]
+list.sort()
+[1, 2, 3, 4]
+list.sort(reverse = True)
+[4, 3, 2, 1]
+```
+- Sort the order for a list
+- Setting resverse equal to True can sort for descending order
+
+## .append()
+```
+list = ["a", "b", "c", "d"]
+list.append("e")
+["a", "b", "c", "d", "e"]
+```
+- Add a new item to the end of the list
+
+## sum()
+```
+list = [1, 2, 3]
+sum(list)
+6
+```
+- Sum up all the item in the list
+- Cannot sum up a list of strings
+
+## Operators with list
+- Comparison operators: == !=
+- Arithmetic operators: + *
+- #- and / not work in list
+
+## min() / max() function
+- Used to find the minimum and the maximum item in the list
+
+## .mean() / .median() function
+```
+import statistics as s
+
+list = [1, 2, 3]
+mean = s.mean(list)
+2
+```
+- Used to find the mean and the median of the list
+
+## .join() function
+```
+list = ["a", "b", "c"]
+",".join(list)
+'a,b,c'
+```
+- Connect all the items in the list
+
+## .split() function
+```
+line = "a,b,c,d,e"
+list = line.split(",")
+["a", "b", "c", "d", "e"]
+```
+- Seperate the item for the list
+
 ## Loops
 - Loops can execute a block of code repeatedly
+
+## for loops
+```
+list = [1, 2, 3, 4, 5]
+for _ in list:
+  print(_)
+1
+2
+3
+4
+5
+```
+- Used to repeat for known multiple
+- Temp variable should not use the name of the list
+
+## if statements
+```
+a = 5
+if a < 0:
+  print("a is smaller than 0")
+elif a > 5:
+  print("a is bigger than 5")
+else:
+  print("a is between 0 and 5")
+```
+- Used to perform different action with different requirements
+
+## try / except
+```
+test_scores = [90, 95, "absent", 100, 76]
+bonus_scores = []
+for score in test_scores:
+    try:
+        bonus_scores.append(score + 2)
+    except:
+        bonus_scores.append(score)
+```
+- Use when not sure whether all the item can run correctly
+
+## in / not in 
+```
+"pie" in "pizza pie"
+True
+```
+- Use to test specfic statement contain or not
