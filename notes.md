@@ -136,3 +136,9 @@ area2
 50
 ```
 Return can return back any function or variable
+
+# Recitation 1
+
+## Data types
+1. Common confusion: digit and number
+
