@@ -1,4 +1,4 @@
-# Lecture 1 Hello World
+# Lecture 1 and 2 Hello World
 
 ## Objects
 1. Integar: 3
@@ -186,3 +186,27 @@ file = open("amount.txt", "r") #used to read the file
 file = open("amount.txt", "w") #used to write the file from start
 file = open("amount.txt", "a") # used to add data after the end of the file
 ```
+# Lecture 3 Lists, Loops, and Ifs
+
+## Lists
+```
+list = [1, "2", 3.0, [4]]
+```
+- Collection of objects kept in a strict order
+- Order matters
+- List can contain mixed data type
+- Nested list: list within a list
+
+## Array
+```
+import array as arr
+arr.array(type, [item])
+```
+- Array need to be the same data type
+- Elements are contiguous memeory location allowing easy modification
+
+## Different between List and Array
+![alt text](Lecture 3\list vs array.png)
+
+## Loops
+- Loops can execute a block of code repeatedly
