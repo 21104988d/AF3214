@@ -330,7 +330,7 @@ dict = {
 - Compound data types
 
 ## Dicitionary Methods
-
+![alt text](https://github.com/21104988d/AF3214/blob/main/Lecture%203/dictionary_method.png)
 
 ## Looping through a dictionary
 ```
@@ -355,3 +355,40 @@ b
 [2, 4]
 ```
 - Can explicit to loop through keys and values
+
+## Opening files
+```
+with open("file.txt", "r" #mode) as f #temp variable:
+  save file as something else
+  or save part of file
+```
+- File automatically closes when exit the indentation
+- "r": read
+- "w": write _(wipes the file clean and rewrite from zero)_
+- "a": append _(add to the end of the file)_
+
+## .read() / .readlines() function
+```
+with open(alice_filename, "r") as f:
+    alice_text = f.read()
+```
+- .read(): Use to change the file object into a string
+- .readlines(): Use to change the file object into a list by seperate each item by each line
+
+## .write() function
+```
+with open(new_alice, "w") as f:
+    for line in alice_list:
+        if line != "\n":
+            f.write(line)
+```
+- Use to write item into the file object
+
+## .rstrip() function
+```
+with open(dog_file, "r") as f:
+    for line in f.readlines():
+        dog_list.append(line.rstrip("\n")) # .rstrip() returns a copy of the string with trailing characters removed
+print(dog_list)
+```
+- Use to delete the specific charcter in the last of the string
