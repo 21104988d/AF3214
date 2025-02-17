@@ -392,3 +392,59 @@ with open(dog_file, "r") as f:
 print(dog_list)
 ```
 - Use to delete the specific charcter in the last of the string
+
+# Recitation 2 Branching, Iterations, Strings, Functions, Lists, Dictionaries, Debugging, Testing, Exceptions
+
+## Strings
+- Letters, special characters, spaces, digits
+- Enclose in quotation marks or signle quotes
+- Concatenate strings
+```
+hi = "hello"
+name = "me"
+greet = hi + name
+"hellome"
+```
+
+## INPUT/OUTPUT
+- print()
+- input()
+
+## Comparison operators
+- i > j
+- i >= j
+- i < j
+- i <= j 
+- i == j 
+- i != j 
+
+## Logic operators
+- not abs
+- a and back
+- a or b
+
+## Control flow
+1. if statement
+```
+if <condition>:
+  <expression>
+elif <conditon>:
+  <expression>
+else:
+  <expression>
+```
+2. while loop
+```
+while <condition>:
+  <expression>
+```
+3. for loop
+```
+for <variable> in range (<num>):
+  <expression>
+```
+
+## break statement
+- Immediate exit whatever loop it is in
+- Skip remaining expression
+- Exits only innermost loop
