@@ -448,3 +448,90 @@ for <variable> in range (<num>):
 - Immediate exit whatever loop it is in
 - Skip remaining expression
 - Exits only innermost loop
+
+## String
+- Senquence of characters
+- Can compare with ==, >, <
+- len() is used to retrieve the length
+- Square brackets _[]_ used to perform indexing
+- Can slice using [start: stop: step] _(Step = 1 by default)_
+- Immutable _(Cannot be modified)_
+
+## Functions
+- Resusable pieces / chunks of code
+- Not run until "called"
+- Function structure:
+	1. Name
+	2. Parameters
+	3. Docstring
+	4. Body
+	5. Returns _(Return None, if no return given)_
+
+## Scope
+- Inside a function, can access a variable defined outside
+- Inside a function, cannot modify a variable defined outside
+
+## Lists
+- Ordered sequence, can accessible by index
+- Denoted by []
+- List elements can contain mixed types
+- Mutable _(list elements can be changed)_
+- .append() to add elements
+- .extend() to mutate list
+- .remove() remove a specific element _(only once)_
+- del() remove a specific index
+- .pop() remove the end of the list and return the removed element
+- list() covert string to a list by every character as an element
+- .split() splist a string on a specfic character _(Split on spaces default)_
+- "".join() turn a list of character into a string
+- __sorted() sort the list but not modify the list and can store for a new value__
+- __.sort() sort the list and modify and return None__
+- .reverse() sort the list in descending order and modify
+- __Aliases effect: change the list will let the object that refer to the list will also change__
+- __Need to copy the list by lisy[:] will not change the list of object__
+- __Change the object of the inner list will also change the outer list__
+
+## Dictionary
+1. Values
+	- Any type
+	- Can be deplicates
+	- Values can be list
+2. Keys
+	- Must be unique
+	- Immutable _Careful with float type as key_
+3. No order to keys or values
+
+## Testing approaches
+1. Black box testing
+	- Explore paths through specification
+2. Glass box testing
+	- Explore path through code
+
+## Error messages
+1. IndexError: access beyond the limit
+2. TypeError: convert an inappropriate type
+3. NameError: reference a non-existent variable
+4. TypeError: mixing data types without appropriate coercion
+5. SyntaxError: forget to close quotation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
