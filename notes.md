@@ -686,6 +686,33 @@ sns.barplot()
 df[column1].dt.month # use to turns into month variable where January = 1
 ```
 
+# Lecture 5 Introduction to Database Systems
+
+## Data Models
+- Data model is data in a database
+- Schema is a particular collection of data
+
+## Relational model
+- Avoid cost of having to maintain the overhead
+	- Store database in simple data structure
+	- Physical storage left up to the DBMS implementation
+	- Access data through high-level language
+- Three components
+	1. Structure: database's table and independent of their physical representation
+	2. Integrity: ensure database's contents satisfy constraints
+	3. Manipulation: programming interface for accessing and modifying a database
+- DBMS can auto-generate unique primary key via identity column
+- Foreign key specifies attribute one relation maps to another relation
+
+## Relational Algebra
+1. \sigma (SELECT)
+	- Choose a subset from a table
+	- e.g. \sigma<sub>a_id = 'a2'<\sub> (R)
+	- From Table R, select a_id column, where value equal to a2
+2. \Pi (PROJECTION)
+	- Define the output should look like
+	- e.g. \Phi<sub>b_id - 100, a_id<\sub>(\sigma<sub>a_id = 'a'<\sub>(R))
+
 
 
 
