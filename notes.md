@@ -515,6 +515,105 @@ for <variable> in range (<num>):
 5. SyntaxError: forget to close quotation
 
 
+# Lecture 4 Pandas dataframes
+
+## Series object
+```
+import pandas as pd
+import numpy as np
+pd.Series([1, 2, 3, 4], index = ['a', 'b', 'c', 'd'])
+a		1
+b		2
+c		3
+d		4
+```
+- One-dimensional labeled array of indexed data
+- Can set the index number _(default start by 0)_
+- Need to use double brackets for selecting two or more columns
+
+## pd.DataFrame() function
+```
+dict = {'a': 1,
+			'b': 2,
+			'c': 3}
+series1 = pd.Series(dict) #turn the dicitionary into a series
+df = pd.DataFrame({'series1': series1}) #turn the series into a dataframe
+a		1
+b		2
+c		3
+dtype: int64
+```
+- Index of the series will turn into the index of dataframe
+- Index will start from 0 when turning a list into dataframe
+- .index: return the index of the dataframe
+- .values: return the values of the dataframe
+- .columns: return the column name of the dataframe
+- .shape: return the structure of the dataframe _e.g. (3,1) for the example_
+- .set_index('column', inplace = True): set the specific column into index and replace it
+- .index.name = None: set the index name into none
+- .reset_index(replace = True): reset the index start from 0 and keep the original index as column
+
+
+## .iloc[] / .loc[] function
+```
+data = pd.Series([100, 200, 300, 400], index = [4, 3, 2, 1])
+data.iloc[1]
+np.int64(200) #result in the position
+data.loc[1]
+np.int64(400) #result in the index name
+```
+- .iloc[]: used to output the position
+- .loc[]: used to output the index name _(Error if no setting index name)_
+- df[['column1', 'column2']]['row1', 'row2']: index on specific row and column for the dataframe
+- .loc[['row1', 'row2'], ['column1', 'column2']]: indicate the row first then the column
+- __Indexing in iloc do not include the last variable, loc does include the last variable__
+
+## .describe() function
+![alt text}(https://github.com/21104988d/AF3214/blob/main/Lecture%204/IMG_0141.jpeg)
+- Use to have a brief statistical numeric
+	1. count
+	2. mean
+	3. std
+	4. min
+	5. 25%
+	6. 50%
+	7. 75%
+	8. max
+
+## .max() function
+- Use to find the largest values of the specific column
+
+## .nlargest() function
+```
+column_name.nlargest(num)
+df.nlargest(num, column_name)
+```
+- Use to find the largest n item for the specific column
+
+## Combining DataFrames
+```
+df_combine = pd.concat([df1, df2])
+```
+- pd.concat([df1, df2]): combine on the row
+- pd.concat([df1, df2], axis = 1): combine on the column
+```
+pd.merge(df1, df2) #inner merge
+pd.merge(df1, df2, how = 'outer') #outer merge
+```
+- Inner join: merge values contain in both dataframe
+- Outer join: merge all the value and state NaN for null in columns
+
+## pd.read_csv() function
+- Load csv file into a dataframe
+
+## .head() / .tail() / .sample function
+- .head(num): first n row in dataframe _(default is 5)_
+- .tail(num): last n row in dataframe _(default is 5)_
+- .sample(num): random n row in dataframe _(default is 1)_
+
+## .info() function
+
+
 
 
 
