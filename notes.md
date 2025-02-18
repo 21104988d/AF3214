@@ -726,6 +726,33 @@ df[column1].dt.month # use to turns into month variable where January = 1
 	- e.g. R #- S
 	- From Table R, select all data, delete duplicate data from table S
 6. X (PRODUCT)
+  - Figure out all possible outcome
+  - e.g. R X S
+  - From Table R, construct all possible outcome with Table S
+7. \bowtie (JOIN)
+  - Select data only include in both table and join the table
+  - e.g. R \bowtie S
+  - From Table R, select duplicate, join Table S
+
+## Aggregates
+1. AVG(col): average col value
+2. MIN(col): minimum col value
+3. MAX(col): maximum col value
+4. SUM(col): sum of value for col
+5. COUNT(col): no. of value in col
+6. LIKE '%__': value contain __ backward
+7. LIKE '__%': value contain __ at the front
+8. LIKE '%__%': value contain __
+9. GROUP BY: group col value
+10. HAVING: same with WHERE
+11. UPPER(col): capitalize
+12. LOWER(col): lower the character
+13. INTO: store temporary table
+14. ORDER BY col [ASC|DESC]: sorting
+15. FETCH: limit the output return
+16. ROW_NUMBER(): rank to current row
+17. OVER (PARTITION BY col): use specify group
+18. LATERAL: inner join
 
 
 
