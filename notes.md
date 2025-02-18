@@ -707,11 +707,11 @@ df[column1].dt.month # use to turns into month variable where January = 1
 ## Relational Algebra
 1. \sigma (SELECT)
 	- Choose a subset from a table
-	- e.g. \sigma<sub>a_id = 'a2'<\sub> (R)
+	- e.g. \sigma<sub>a_id = 'a2'</sub> (R)
 	- From Table R, select a_id column, where value equal to a2
 2. \Pi (PROJECTION)
 	- Define the output should look like
-	- e.g. \Phi<sub>b_id - 100, a_id<\sub>(\sigma<sub>a_id = 'a'<\sub>(R))
+	- e.g. \Phi<sub>b_id - 100, a_id</sub>(\sigma<sub>a_id = 'a'</sub>(R))
 
 
 
