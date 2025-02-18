@@ -708,10 +708,24 @@ df[column1].dt.month # use to turns into month variable where January = 1
 1. \sigma (SELECT)
 	- Choose a subset from a table
 	- e.g. \sigma<sub>a_id = 'a2'</sub> (R)
-	- From Table R, select a_id column, where value equal to a2
+	- From Table R, select a_id = a2
 2. \Pi (PROJECTION)
 	- Define the output should look like
 	- e.g. \Phi<sub>b_id - 100, a_id</sub>(\sigma<sub>a_id = 'a'</sub>(R))
+	- From Table R, select a_id = a2, show b_id - 100 and a_id
+3. \cup (UNION)
+	- Select all data and delete duplicate data
+	- e.g. R \cup S
+	- From Table R and S, select all table and delete duplicate
+4. \cap (INTERSECT)
+	- Select data only include in both table
+	- e.g. R \cap S
+	- From Table R and S, select duplicate
+5. #- (DIFFERENCE)
+	- Select unique data from the first table
+	- e.g. R #- S
+	- From Table R, select all data, delete duplicate data from table S
+6. X (PRODUCT)
 
 
 
