@@ -549,6 +549,7 @@ dtype: int64
 - .values: return the values of the dataframe
 - .columns: return the column name of the dataframe
 - .shape: return the structure of the dataframe _e.g. (3,1) for the example_
+- .size: return the number of element in the dataframe
 - .set_index('column', inplace = True): set the specific column into index and replace it
 - .index.name = None: set the index name into none
 - .reset_index(replace = True): reset the index start from 0 and keep the original index as column
@@ -612,8 +613,78 @@ pd.merge(df1, df2, how = 'outer') #outer merge
 - .sample(num): random n row in dataframe _(default is 1)_
 
 ## .info() function
+![alt text](https://github.com/21104988d/AF3214/blob/main/Lecture%204/info%20function.png)
+- Use to result the column, number of column, null value and the column data
 
+## Boolean return of a Dataframe
+```
+df[df[column] == 'num']
+```
+- Return the column which is equal to the 'num' values
 
+## .rename() function
+```
+df.rename(columns = {'new_name': 'old_name'})
+```
+
+##.drop() function
+```
+df.drop(num)
+df.drop(['column1'], axis = 1)
+```
+- Use the drop the specific row index or column name of the dataframe
+
+## Data aggregation
+- .count(): number of row
+- .sum()
+- .mean()
+- .median()
+- .min()
+- .max()
+- .unique()
+- .std()
+- .var()
+
+## .groupby() function
+```
+df.groupby('column1')
+```
+- Use to group the values in a column to look at summary measures
+
+## .sort_index() / .sort_values() function
+```
+df.sort_index() #sort the row ascending
+df.sort_index(ascending = False) # sort the row descending
+df.sort_index(axis = 1) # sort the column ascending
+df.sort_index(axis = 1, ascending = False) # sort the column descending
+df.sort_values(by = 'column1') # sort the specific column in row ascending
+```
+
+## .to_csv() function
+```
+df.to_csv(file) # save the dataframe to csv file
+```
+
+## .plot() function
+```
+df.plot(kind = graph, x = x_variable, y = y_variable)
+```
+- Use the plot the scatter, bar, line plt, etc
+
+## Seasborn
+```
+import seaborn as sns
+sns.lineplot(x = x_variable, y = y_variable, data = df, hue = column)
+sns.scatterplot()
+sns.barplot()
+```
+- Use to plot different graph by different column as x and y variable on the dataframe
+- Seperate through different variable by hue parameter
+
+## dt.month function
+```
+df[column1].dt.month # use to turns into month variable where January = 1
+```
 
 
 
