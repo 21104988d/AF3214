@@ -88,8 +88,5 @@ def extract_receiver():
     result = chain.invoke({"chat_history": history,
                            "new_conversation": question,
                            "contact_name": name})
-    
-    if result != name:
-        result = "error"
-    
+        
     return result
