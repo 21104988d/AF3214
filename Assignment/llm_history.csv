@@ -2,3 +2,10 @@ Receive ID, Message, Action
 16,Test 2,error
 15,Test,error
 18,I want to send money to Peter,transaction
+25,Send money to Peter,transaction
+30,Send money to Amy,transaction
+34,Test,error
+37,Get an Apple,error
+41,Send 200 to Amy,transaction
+44,Send 200 to Leo,transaction
+47,Send 200 to Isaac,transaction
