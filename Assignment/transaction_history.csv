@@ -1,4 +1,6 @@
-Receive ID, Message, Amount
+Receive ID, Message, Amount, Hex
 18,I want to send money to Peter,100
 25,Send money to Peter,100
 30,Send money to Amy,100
+65,Send 150 to Peter,150,0x58559eb80f3b7c0acab3b8f8a4118b8eefbec91e74cfb9baa67e354cb721e4f4
+72,Send money to Isaac,0,0xa7cfbcc7ca40f5a8cf3197aeeb5e1a1b0e7503958317b50f41d5ab546fc3d1c6

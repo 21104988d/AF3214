@@ -2,9 +2,8 @@ from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 import pandas as pd
 import csv
-from datetime import datetime
 
-def llm():
+def user_action():
     model = OllamaLLM(model="llama3.2")
 
     template = """
@@ -58,14 +57,6 @@ def extract():
     question = tg_messages.iloc[-1]['Message']
 
     result = chain.invoke({"chat_history": history,
-                       "new_conversation": question})
-
-    with open("transaction_history.csv", mode="a", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        if tg_messages.iloc[-1]['Receive ID'] not in history['Receive ID'].values:
-            receive_id = tg_messages.iloc[-1]['Receive ID']
-            text = question
-            action = result
-            writer.writerow([receive_id, text, action])
+                           "new_conversation": question})
     
     return result

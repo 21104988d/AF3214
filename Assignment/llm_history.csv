@@ -9,3 +9,9 @@ Receive ID, Message, Action
 41,Send 200 to Amy,transaction
 44,Send 200 to Leo,transaction
 47,Send 200 to Isaac,transaction
+50,I want to give 500 money to Isaac,transaction
+56,I want to give 200 to Isaac,transaction
+62,I want to give 200 to Peter,transaction
+65,Send 150 to Peter,transaction
+69,Send money to Osaac,transaction.
+72,Send money to Isaac,transaction
