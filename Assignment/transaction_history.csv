@@ -1,6 +1,12 @@
-Receive ID, Message, Amount, Hex
-18,I want to send money to Peter,100
-25,Send money to Peter,100
-30,Send money to Amy,100
-65,Send 150 to Peter,150,0x58559eb80f3b7c0acab3b8f8a4118b8eefbec91e74cfb9baa67e354cb721e4f4
-72,Send money to Isaac,0,0xa7cfbcc7ca40f5a8cf3197aeeb5e1a1b0e7503958317b50f41d5ab546fc3d1c6
+Receive ID,Message,Amount,Receiver,Hex
+18,I want to send money to Peter,100,Peter
+25,Send money to Peter,100,Peter
+30,Send money to Amy,100,Amy
+65,Send 150 to Peter,150,Peter,0x58559eb80f3b7c0acab3b8f8a4118b8eefbec91e74cfb9baa67e354cb721e4f4
+72,Send money to Isaac,0,Isaac,0xa7cfbcc7ca40f5a8cf3197aeeb5e1a1b0e7503958317b50f41d5ab546fc3d1c6
+77,Send 110 to Isaac,110,Isaac,0x76fbcb8112e16820b1473dfc34649983bc3c0cab243dffdad6782361bb2d8d0f
+81,Send 50 to Isaac,50,Isaac,0xfa815441ad2817c8eb14cd586bca6d1dc33f5214d377295a675df62e1b4b82e0
+85,Send 10 dollar to Peter,10,Peter,0x53e8901723c78010ae4dd2721d9de1f56b666028225a892a8582e2aa8dafb5bc
+98,Send 100 to Isaac,100,Isaac,0x00632d362e1a326b03c6f770a94fd594de49e38351fb93cd85e21378c8ecce86
+118,Send 100 to Peter,100,Peter,0xd18d6793a2cd8d853ff36d4be125bf704769d335ff009a6515d99251705b3184
+128,Sene 200 to Isaac,200,Isaac,0x5bb006afd35683a6a65ddd53bbcb05b81b61f7c0767113b3ca4152f9889d8560

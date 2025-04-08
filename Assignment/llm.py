@@ -37,7 +37,7 @@ def user_action():
     
     return result
 
-def extract():
+def extract_amount():
     model = OllamaLLM(model="llama3.2")
 
     template = """
@@ -58,5 +58,38 @@ def extract():
 
     result = chain.invoke({"chat_history": history,
                            "new_conversation": question})
+    
+    return result
+
+def extract_receiver():
+    model = OllamaLLM(model="llama3.2")
+
+    template = """
+    You are an assistant of to analyze the receiver of the transaction.
+    Here are some historial conversations with the client: {chat_history}
+    Here is the new conversation with the client: {new_conversation}
+    Here is the contact list of the client: {contact_name}
+    Please analyze the new conversation match the exact receiver of the transaction.
+    You only need to answer with one word.
+    If the receiver is not in the contact list, please answer me error.
+    If the receiver is in the contact list, please answer me the name of the receiver.
+    You need to choose the name from the contact list.
+    """
+
+    prompt = ChatPromptTemplate.from_template(template)
+    chain = prompt | model
+
+    tg_messages = pd.read_csv("telegram_messages.csv")
+    history = pd.read_csv("transaction_history.csv")
+    question = tg_messages.iloc[-1]['Message']
+    receiver = pd.read_csv("contact.csv")
+    name = receiver['Receiver'].tolist()
+
+    result = chain.invoke({"chat_history": history,
+                           "new_conversation": question,
+                           "contact_name": name})
+    
+    if result != name:
+        result = "error"
     
     return result

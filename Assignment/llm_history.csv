@@ -1,4 +1,4 @@
-Receive ID, Message, Action
+Receive ID,Message,Action
 16,Test 2,error
 15,Test,error
 18,I want to send money to Peter,transaction
@@ -15,3 +15,14 @@ Receive ID, Message, Action
 65,Send 150 to Peter,transaction
 69,Send money to Osaac,transaction.
 72,Send money to Isaac,transaction
+77,Send 110 to Isaac,transaction
+81,Send 50 to Isaac,transaction
+85,Send 10 dollar to Peter,transaction
+90,Send 110 dollar to Peter,transaction
+98,Send 100 to Isaac,transaction
+106,Send 100 to Isaac,transaction
+113,Send 50 to chan,transaction.
+118,Send 100 to Peter,transaction
+128,Sene 200 to Isaac,transaction
+132,Please give 50 to kkk,transaction
+135,Please send 50 to kkk,transaction
