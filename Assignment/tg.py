@@ -12,8 +12,8 @@ def send_telegram_message(message):
     try:
         response = requests.post(url, json=payload)
         response.raise_for_status()
-    except requests.RequestException as e:
-        print(f"Failed to send message: {e}")
+    except:
+        print(f"Failed to send message.")
 
 processed_message_ids = set()
 def receive_telegram_messages():
@@ -45,6 +45,6 @@ def receive_telegram_messages():
         else:
             print("No messages found.")
             return []
-    except requests.RequestException as e:
-        print(f"Failed to receive messages: {e}")
+    except:
+        print(f"Failed to receive messages.")
         return []
