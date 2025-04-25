@@ -30,3 +30,5 @@ Receive ID,Message,Action
 150,Please send 100 to Peter,transaction
 154,Send 100 to Isaac,transaction
 161,Please send 100 to Peter,transaction
+169,I want to give 100 to Isaac,transaction
+174,Please give 100 to Isaac,transaction
