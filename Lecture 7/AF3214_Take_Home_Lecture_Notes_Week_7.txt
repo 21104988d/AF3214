@@ -1,0 +1,707 @@
+Week 7: Introduction to Market Microstructure,
+Algorithmic Trading, and Direct Market Access
+AF3214 Python Programming for Accounting and Finance
+Vincent Y. Zhuang, Ph.D.
+vincent.zhuang@polyu.edu.hk
+School of Accounting and Finance
+The Hong Kong Polytechnic University
+R508, 8:30 am – 11:20 am, Wednesdays, Semester 2, AY 2024-25
+
+Market Structure Analytics
+• One of accounting and
+finance analytics is market
+structure analytics.
+• The US Securities and
+Exchange Commission (SEC)
+created this website to
+promote better
+understanding of their equity
+markets and equity market
+structure through the use of
+data and analytics:
+• https://www.sec.gov/markets
+tructure/market-structureanalytics
+2
+
+Algorithmic Trading
+
+ Algorithmic trading is an automated trading approach that uses computer algorithms to trade
+the markets.
+ These algorithms create buy and sell orders and automatically send the orders to the market
+via the brokerage platform.
+
+ For a trading algorithm to place an order, the market conditions must match the
+predefined criteria.
+Examples of Simple Trading Algorithms:
+
+ Short 20 lots of GBP/USD if rises above 1.3610. For every 5 pip rise in GBP/USD, cover
+the short by 2 lots. For every 5 pip fall in GBP/USD, increase the short position by 1 lot.
+ Buy 100,000 shares of Tencent (0700.HK) if the price falls below 400. For every 0.1%
+increase in price beyond 400, buy 1000 shares. For every 0.1% decrease in price below
+400, sell 1000 shares.
+3
+
+World full of Assets
+
+• Stocks
+• Bonds
+• Options
+• FOREX
+• Funds
+• Cryptocurrencies
+• …
+4
+
+Overview of the Asset Types
+• Stocks – (also knowns as shares or equity) is a type of security that signifies proportionate ownership
+in the issuing corporation.
+• It entitles the holders to that proportion of the corporation’s assets and earnings.
+• How does the stock market work: https://www.youtube.com/watch?v=p7HKvqRI_Bo
+
+5
+
+Overview of the Asset Types – Cont’d
+• Bonds – A fixed income instrument that represents a loan made by an investor to a borrower.
+
+What are bonds?
+Anheuser - Busch, Incorporated
+
+Video: https://www.rbcgam.com/en/ca/learn-plan/investment-basics/bondbasics/detail
+
+6
+
+Overview of the Asset Types – Cont’d
+
+• Options – An agreement
+between a buyer and
+seller that gives the
+purchaser of the option
+the right to buy or sell a
+particular asset at a later
+date at an agreed price.
+• Most often used in
+securities, commodities,
+and real estate transaction
+
+7
+
+Overview of the Asset Types – Cont’d
+
+• FOREX – Known as foreign
+exchange or currency trading
+is a decentralized global
+market where all the world’s
+currencies trade.
+• It is the most liquid market in
+the world with an average
+daily trading volume
+exceeding $5 trillion.
+• Active 24/7 due to different
+time zones.
+
+8
+
+Overview of the Asset Types – Cont’d
+• Cryptocurrencies – A cryptocurrency is a digital asset designed to work as
+a medium of exchange.
+• Become increasingly popular.
+• They are different from currencies because they are decentralized assets
+currently not regulated or controlled by any one country, central bank, or
+regulatory authority. Except for El Salvador.
+• Examples: https://coinmarketcap.com/all/views/all/
+
+9
+
+The Market Players
+
+• Exchanges – An exchange is an institution, organization, or association
+which hosts a market where stocks, bonds, options, futures, and
+commodities are traded.
+• They are places dedicated to trading.
+• They impose rules and regulations on the firms and brokers involved in them.
+• How the NYSE Works: https://www.youtube.com/watch?v=XRJBZIQrQAY
+Largest stock exchanges?
+
+NYSE, NASDAQ, Tokyo, Shanghai, Euronext, Hong
+Kong, London, Shenzhen…
+10
+
+The Market Players – Cont’d
+• Broker or Dealer – is a person
+or firm in the business of
+buying and selling securities
+for its own account or on
+behalf of is customers.
+• A brokerage acts as a broker
+when it execute orders on
+behalf of its clients.
+• A dealer or principal – Trades
+for its own account.
+
+11
+
+The Market Players – Cont’d
+
+“Sell-Side” – brokers and dealers that
+facilitate the issuance and selling of
+assets
+
+“Buy-side” – Institutional/individual
+investors that purchase stocks,
+securities, and other financial products
+for their company or clients.
+12
+
+Brief History of Electronic Trading
+• In the 1960s, computer networks were
+used to route prices to computer
+terminals.
+• Most orders were still carried out over
+the phone or in person on exchanges.
+• By the mid 1990s, many of the world’s
+major stock exchanges were trading a
+considerable proportion of their volume
+electronically.
+• The bond market has been slower to
+adopt electronic trading, due to them
+being centered more on market makers
+rather than exchanges.
+• Overall, electronic trading has made the
+world markets accessible to a much
+wider range of users. Without this
+innovation, algorithmic trading, DMA,
+and automated crossing would not exist.
+
+Johnson, B.W. (2010). Algorithmic trading &
+DMA : an introduction to direct access trading
+strategies.
+13
+
+The Trading Process
+trade flow from the point of view of an investor
+1.Buy-side initiated trade is placed
+as an order with a broker.
+2.The broker will communicate the
+order to a trader/dealer.
+3.The trader would then either
+quote a price to trade against their
+own inventory or alternatively
+work the order on an exchange.
+
+• Nowadays, electronic trading has predominantly taken over this whole
+process.
+• Wall Street Traders Were VERY Intense in 1980:
+https://www.youtube.com/watch?v=8e1g-0n8iGo
+15
+
+The Trading Process – Cont’d
+
+• Direct Market Access (DMA) is
+where brokers allow clients access
+to their order routing
+infrastructure.
+• This allows the buy-side to issue
+their electronic orders almost
+directly to the exchanges,
+effectively giving them much the
+same level of control over an
+order's execution as a sell-side
+trader has.
+
+15
+
+The Trading Process – Cont’d
+
+• Sponsored Access takes this to
+the next level, for clients whose
+high-frequency trading
+strategies need ultra-low
+latency connections.
+• Essentially, this allows clients to
+connect directly to the market
+
+15
+
+Algorithmic Trading
+• A computerized system is
+responsible for executing the
+order to buy or sell a given
+asset, rather than being
+worked manually by a trader.
+• A computer program follows
+preset to determine how each
+order should be executed.
+• Both Algorithmic Trading and
+DMA allow clients access to
+trade on markets known as
+Direct Access Trading.
+• https://www.youtube.com/wat
+ch?v=2u007Msq1qo
+
+18
+
+Institutional Trading Types
+• Portfolio Trading – Referred
+to as basket or program trading.
+Provides investors with cost
+effective means of trading
+multiple assets, rather than
+having to trade them
+individually.
+• An ETF is an example of a
+basket of securities that trade
+on an exchange just like a stock.
+• ETF are a collection of stocks
+or securities that track an
+underlying index.
+
+19
+
+Institutional Trading Types – Cont’d
+
+• Systematic Trading –
+Adopting the same approach for
+trading. Such as dictating points
+for trade entry and exit.
+• An example would be comparing
+market prices with boundary
+conditions.
+• Can require an intricate set of
+rules, which accommodate a
+wide range of intraday conditions
+such as price, volume, or
+volatility.
+
+20
+
+Forms of Systematic Trading
+
+• Quantitative Trading – Sometimes referred to as
+“Blackbox” trading.
+• Trading rules are enforced by adopting proprietary
+quantitative models.
+• Strategies can range from tracking indicators to
+determine trade initiation and close out, to
+monitoring the overall portfolio risk.
+
+21
+
+Forms of Systematic Trading – Cont’d
+• High frequency trading – Aims to take advantage of
+opportunities intraday.
+• The time scales involved range from hours down to seconds or
+even fractions of a second.
+• A specialized form of Blackbox/quantitative trading focused on
+exploiting short-term gains.
+• High frequency traders adopt a similar style to market maker,
+where they keep a neutral position except to take advantage of
+any price discrepancies.
+
+22
+
+Forms of Systematic Trading – Cont’d
+• Statistical arbitrage – represents a systematic investment/trading
+approach, which is based on a combination of real time and
+historical data analysis.
+• The main difference from high frequency trading is that strategies
+may span over longer timeframes.
+• The goals are similar, both try to take advantage of mispricing whilst
+minimizing the overall exposure to risk.
+• Strategies try to find trends or indicators from previous data and
+then use these to gain an edge.
+• Time series analysis, data mining, and artificial intelligence are
+employed to isolate useful information from the mass of data that
+available.
+23
+
+ALGORITHMIC
+TRADING
+
+Deep Dive into Algorithmic Trading
+
+• An algorithm is a set of instructions for accomplishing a given task,
+therefore a trading algorithm is just a computerized model that
+incorporates the steps required to trade an order in a specific way.
+• Due to the nature of trading algorithms and their need to constantly
+react to ever changing market conditions these rules can become
+quite complex.
+25
+
+Deep Dive into Algorithmic Trading
+
+• An example of a simple trading algorithm is a slicing strategy, where
+a big order is broken up and a certain amount is traded during certain
+periods to achieve a certain average price.
+• Modern trading algorithms have evolved from this simplistic order
+slicing strategy to the point where their trading patterns are
+unrecognizable.
+• They are designed to target the best execution, given the specified
+objectives.
+
+26
+
+Evolution of Trading algorithms
+
+• Early on trading algorithms were natural evolutions of simple order
+slicing.
+• Their main focus was on meeting specific benchmarks, starting with a
+Time Weighted Average Price (TWAP) and progressing on to Volume
+Weighted Average Price (VWAP).
+• Both the early on TWAP and VWAP algorithms were statically driving.
+Therefore once an order was received, a specific trading schedule was
+determined, which then drive the trading algorithm.
+• Using these statically created schedules proved vulnerable, because
+market participants could easily spot and take advantage of a regular
+trading pattern.
+
+27
+
+Evolution of Trading Algorithms – Cont’d
+• The second generation of trading algorithms were created in
+response to the application of transaction cost analysis.
+• Transaction cost analysis breaks down all the various costs associated
+with trading.
+• It highlighted that the effect an order has on the asset’s price was not
+the only significant cost.
+• Other factors, such as timing risk and opportunity costs, could
+actually outweigh the market impact.
+• The first generation of algorithms were not designed to be price or
+risk sensitive; they were just simply focused on reducing overall
+market impact.
+
+28
+
+Evolution of Trading Algorithms – Cont’d
+• The third generation of
+algorithms have resulted from the
+ongoing search for liquidity
+triggered by rapid proliferation of
+electronic crossing networks
+and alternative trading
+systems.
+• Electronic crossing network is an
+alternative trading system that
+matches buy and sell orders
+electronically for execution
+without first routing the order to
+an exchange or other displayed
+market.
+
+29
+
+Evolution of Trading Algorithms – Cont’d
+
+• The combination of multiple venues and increasing
+transparency has helped transform simple order routing
+systems into complex liquidity-based algorithms.
+• They constantly examine the order books of different venues
+to decide where it is best to place orders.
+• Off-market trading has also shifted to new electronic venues in
+particular the “dark pools” (private exchanges) or alternative
+trading system (ATS).
+
+30
+
+DIRECT ACCESS
+TRADING
+
+Direct Access Trading
+
+• Represents the shift in access and control of execution to
+the buy-side.
+• Investors and buy-side traders can now get direct access
+allowing them to place orders on many of the worlds’
+financial marketplaces.
+• Direct access trading was synonymous with DMA, but
+with crossing and algorithmic trading, institutions now
+have a broader choice of execution methods.
+
+32
+
+Direct Access Trading – Cont’d
+• Direct Market Access extends the principle of remote access
+to a broker’s clients.
+• It has been present since the 1980s.
+• With DMA, the client can take advantage of the broker’s
+infrastructure to send their orders to the exchange.
+• A key concern is leaking of information; therefore DMA
+services are run by brokers as a separate entity to protect
+client orders.
+
+33
+
+Sponsored Access
+• Sponsored access caters for buy-side clients with highfrequency trading strategies.
+• Markets usually require the broker to monitor the trading,
+ensuring that no excessive risks are taken.
+• Monitoring can be carried out pre-trade, either with a fast,
+dedicated system, or by using a solution. This adds some
+overhead.
+• Naked Access is when monitoring is done post trade. This
+does not allow the broker to prevent erroneous trading.
+
+34
+
+Crossing
+
+• Institutions often need to trade in large sizes, but large block
+orders can expose them to price risk
+• In the past, the large orders would have been handled by
+brokers off the trading floor.
+• “Upstairs Market”, since these negotiations took place
+upstairs in broker’s offices, away from the exchange floor.
+• Crossing systems provide an electronic mechanism allowing
+investors to carry out their own block trading anonymously.
+
+35
+
+Crossing – Cont’d
+• These system aggregate orders and then match them at set
+points throughout the day.
+• These anonymous trading venues ensure that order details
+are hidden, hence they have often been referred to as “dark
+pools” of liquidity.
+• They offer the buy-side the chance to cut out the broker as
+an intermediary and trade anonymously with each other.
+• Orders using crossing systems or Alternative Trading System
+(ATS) are not guaranteed to execute; the focus is on
+achieving a better price and minimizing information leakage.
+36
+
+Direct Liquidity Access
+
+• Managing an order on a crossing network or ATS is
+essentially the same as DMA, therefore vendors now offer
+solutions that enable access to both mechanisms.
+• Direct Liquidity Access does not only just combine DMA
+and crossing, but also includes features such as liquidity
+aggregation, where smart order routing or custom trading
+algorithms are used to seek out sufficient liquidity at the
+desired price.
+
+37
+
+Manual Trading
+
+• There are still perks to manual
+trading.
+• It allows the client to discuss
+the order with the broker.
+• It gives them an opportunity to
+gain new market information
+and analysis.
+
+38
+
+MARKET
+MICROSTRUCTURE
+
+What is it?
+
+• Market microstructure is a branch of finance
+concerned with details of how exchange occurs in
+the markets.
+• It focuses on the key mechanisms involved in trading
+and helps explain many of the costs.
+
+40
+
+What is it? – Cont’d
+
+MARKET STRUCTURE
+AND DESIGN
+
+TRADING MECHANISM
+RESEARCH
+
+TRANSACTION COST
+MEASUREMENT AND ANALYSIS
+41
+
+The Fundamentals
+
+• The purpose of a market is to bring buyers and sellers
+together.
+• Capital markets may be categorized into primary and
+secondary markets.
+• Primary market deals with issuance of new assets/securities.
+• The secondary market is the subsequent trading of these
+assets.
+
+42
+
+Primary Market
+
+• Government bonds issued
+via specialized auctions
+• Initial Public Offerings
+(IPOs), follow-up offerings,
+and so on.
+• Corporate Debt (Bonds) is
+generally placed using
+underwriters.
+
+43
+
+Secondary Market
+
+• Secondary markets are
+important because investors will
+be more willing to provide capital
+if they know the assets may
+readily be traded.
+• The flexibility allows them to
+withdraw capital when needed
+and to switch between assets.
+• Therefore the one of the main
+focuses of market microstructure
+is the efficiency of the secondary
+markets.
+44
+
+Liquidity
+• Liquidity is a vital aspect of trading.
+• A liquid market or asset should
+have lower cost for immediacy, i.e.
+trading costs.
+• More liquid markets or assets will
+also usually have higher trading
+volumes.
+• The stock market is generally more
+liquid than the real estate market.
+• Characteristics of market liquidity
+can be characterized in terms of
+three main features
+• Depth
+• Tightness
+• Resilience
+45
+
+Liquidity – Cont’d
+• Depth – indicates the total
+quantity of buy and sell orders
+that are available for the asset
+around the equilibrium price. Thus
+a deep market enables us to trade
+large volumes without causing
+sizable price movements.
+• Tightness – bid offer spread. The
+difference between the prices to
+buy and sell an asset.
+• Resilience – How quickly the
+market recovers from a shock. A
+resilient market will suffer less
+price discrepancies from trading.
+So changes in price do not affect
+the overall level of trading or
+availability of orders.
+
+46
+
+MARKET STRUCTURE
+AND DESIGN
+
+Key Characteristics
+
+Market
+Type
+
+Order
+Types
+
+Transparency
+
+Trading
+Protocols
+
+Off-market
+trading
+
+48
+
+Types of Markets
+
+• Two most important properties for classifying
+markets are the following.
+• Trading Mechanism
+• Trading Frequency
+
+49
+
+Trading Mechanism
+
+• Markets are generally thought of as being either quote
+driven, order-driven, or a mix.
+• A purely quote-driven market means traders must
+transact with a dealer/market maker who quotes prices
+at which they will buy and sell a given quantity.
+• Order driven markets allow all traders to participate
+equally, which means placing orders on an order book
+that are then matched using a set of rules.
+
+50
+
+Examples of Quote Driven Market
+
+Bonds
+Currencies
+Commodities
+51
+
+Order Driven Market
+• Prices are established by an
+actual order.
+• The best bid price represents the
+highest priced buy order.
+• The best offer is set by the lowest
+priced sell order.
+• A trade may only occur when a
+buy order matches the current
+best offer price.
+• Key difference is that instead of
+reacting to the market maker’s
+two-way quote, we react to the
+available liquidity on the order
+book.
+
+52
+
+Benefits of Order Driven Markets
+
+• Persistence of orders within order-driven system provides visible
+liquidity.
+• Offer more control over order choice.
+• Order may be placed for any preferred price and size without the
+need for negotiation.
+
+53
+
+Trading Frequency
+
+• The determinant of when requirements are turned into
+executions.
+• Continuous trading – Leads to price volatility.
+• Periodic Trading - Scheduled for specific time/s in the
+day.
+• Request-driven trading – Requesting a quote from a
+market maker, but not the most efficient in terms of the
+price achieved.
+
+54
+
+Order Types
+
+• Order is simply an instruction to buy or sell a specific quantity
+of a given asset.
+• Two main types
+• Market Orders – Trade immediately at the best price
+available.
+• Limit Orders – Have an inbuilt price limit that must not be
+breached, a maximum price for buys and a minimum price
+for sells.
+
+56
+
+The End
+
+
